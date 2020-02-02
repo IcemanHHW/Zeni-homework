@@ -33,9 +33,9 @@ $search_term = $_GET['s'];
 $exclude = $_GET['e'];
 
 $args = array(  
-    's' => $search_term,
-    'e' => $exclude,
+    's' => "$search_term -$exclude",
 );
+
 
 
 $loop = new WP_Query( $args ); 
