@@ -18,7 +18,7 @@ get_header();
 $args = array(  
     'post_type' => 'book',
     'post_status' => 'publish',
-    'author' => 'maarten',
+    'author' => 'IcemanHHW',
 );
 
 

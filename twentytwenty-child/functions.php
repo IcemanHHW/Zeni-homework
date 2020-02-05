@@ -38,6 +38,15 @@ function create_posttype() {
                 'name' => __( 'Books' ),
                 'singular_name' => __( 'Book' )
             ),
+            'supports' => array(
+                'title',
+                'editor',
+                'excerpt',
+                'comments',
+                'revisions',
+                'thumbnail',
+                'author',
+                'page-attributes',),
             'public' => true,
             'has_archive' => true,
             'rewrite' => array('slug' => 'books'),
