@@ -25,8 +25,10 @@ $args = array(
 $loop = new WP_Query( $args ); 
     
 while ( $loop->have_posts() ) : $loop->the_post(); 
-    print the_title(); 
-    the_excerpt(); 
+?>
+    <h3><?php the_title(); ?></h3> 
+    <p><?php the_excerpt(); ?> </p>
+<?php
 endwhile;
 
 wp_reset_postdata(); 
