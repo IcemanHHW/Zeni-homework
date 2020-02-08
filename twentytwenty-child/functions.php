@@ -28,6 +28,12 @@ add_action('init',function(){
 	global $wp;    
     $wp->add_query_var('my_param');  
     $wp->add_query_var('e');
+    $wp->add_query_var('day_from');
+    $wp->add_query_var('month_from');
+    $wp->add_query_var('year_from');
+    $wp->add_query_var('day_to');
+    $wp->add_query_var('month_to');
+    $wp->add_query_var('year_to');
 });
 
 function create_posttype() {
