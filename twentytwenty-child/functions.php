@@ -34,6 +34,8 @@ add_action('init',function(){
     $wp->add_query_var('day_to');
     $wp->add_query_var('month_to');
     $wp->add_query_var('year_to');
+    $wp->add_query_var('minimal_rating');
+    $wp->add_query_var('maximal_rating');
 });
 
 function create_posttype() {
