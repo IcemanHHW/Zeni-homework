@@ -58,6 +58,29 @@ function create_posttype() {
             'rewrite' => array('slug' => 'books'),
         )
     );
+
+    register_post_type( 'product',
+    array(
+        'labels' => array(
+            'name' => __( 'Products' ),
+            'singular_name' => __( 'Product' )
+        ),
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'custom-fields',
+            'page-attributes',),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'products'),
+    )
+);
+
 }
 
 add_action( 'init', 'create_posttype' );

@@ -25,7 +25,8 @@ $args =  [   'date_query' => [
             ],                  
             'inclusive' => false,     
         ],   
-    ],   
+    ],  
+    'post_type' => 'post', 
     'posts_per_page' => -1, 
 ];
 

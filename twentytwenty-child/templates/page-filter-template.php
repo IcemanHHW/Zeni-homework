@@ -132,6 +132,12 @@ get_header();
                 </select>
             </div>
             <br><br>
+            <div>
+                <p>minimal rating</p>
+                <input type="number" name="minimal_rating">
+                <p>maximal rating</p>
+                <input type="number" name="maximal_rating">
+            </div>
                 <input type="submit" id="filtersubmit" value="filter" />
         </form>
         <br><br>
@@ -164,7 +170,7 @@ $args =  [   'date_query' => [
     'inclusive' => false,     
 ],   
 ],   
-'post_type' => 'post',
+'post_type' => 'page',
 'nopaging' => true,
 ];
 

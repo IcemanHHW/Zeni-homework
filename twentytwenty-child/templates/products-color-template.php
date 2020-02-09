@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Posts before template
+ * Template Name: Products color template
  * Template Post Type: post, page
  *
  * @package WordPress
@@ -15,19 +15,11 @@ get_header();
 
 <?php
 
-$args =  [   'date_query' => [     
-            [      
-                'before'    => [ 
-                            'year'  => 2018,         
-                            'month' => 9,         
-                            'day'   => 25,       
-            ],                  
-            'inclusive' => false,     
-        ],   
-    ],   
-    'post_type' => 'post',
-    'posts_per_page' => -1, 
-];
+$args = array(  
+    'post_type' => 'product',
+    'meta_key'   => 'color',   
+    'meta_value' => 'orange', 
+);
 
 
 $loop = new WP_Query( $args ); 
@@ -35,7 +27,6 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); 
 ?>
     <h3><?php the_title(); ?></h3> 
-    <p><?php the_date(); ?></p>
     <p><?php the_excerpt(); ?> </p>
 <?php
 endwhile;
