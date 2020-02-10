@@ -147,9 +147,9 @@ get_header();
             <br><br>
             <div>
                 <p>minimal rating</p>
-                <input type="number" name="minimal_rating" value="<?php echo htmlspecialchars($_GET['minimal_rating']); ?>">
+                <input type="number" name="minimal_rating" value="<?php echo esc_html($_GET['minimal_rating']); ?>">
                 <p>maximal rating</p>
-                <input type="number" name="maximal_rating" value="<?php echo htmlspecialchars($_GET['maximal_rating']); ?>">
+                <input type="number" name="maximal_rating" value="<?php echo esc_html($_GET['maximal_rating']); ?>">
             </div>
             <input type="submit" id="filtersubmit" value="filter" />
         </form>
@@ -169,37 +169,40 @@ $month_to = $_GET['month_to'];
 $year_to = $_GET['year_to'];
 
 /* rating data */
-$minimal_rating = $_GET['minimal_rating'];
-$maximal_rating = $_GET['maximal_rating'];
+$minimal_rating = intval( $_GET['minimal_rating'] );
+$maximal_rating = intval( $_GET['maximal_rating'] );
 
-$args =  [   'date_query' => [     
-    [    
-        'before'    => [ 
-            'year'  => $year_to,         
-            'month' => $month_to,         
-            'day'   => $day_to,       
-        ],                  
-        'after'    => [ 
-                    'year'  => $year_from,         
-                    'month' => $month_from,         
-                    'day'   => $day_from,       
-    ],                  
-    'inclusive' => false,     
-],   
-], 
-'meta_query' => array (
-    'key' => 'page_rating',
-    'value' => array( $minimal_rating, $maximal_rating ),
-    'type' => 'numeric',
-    'compare' => 'BETWEEN',
-    ),
-'post_type' => 'page',
-'post_status' => 'publish',
-];
+$args = array(
+	'post_type'              => 'page',
+	'post_status'            => 'publish',
+	'date_query'             => array(
+		array(
+			'before' => array(
+				'year'  => $year_to,
+				'month' => $month_to,
+				'day'   => $day_to,
+			),
+			'after' => array(
+				'year'  => $year_from,
+				'month' => $month_from,
+				'day'   => $day_from,
+			),
+			'inclusive' => false,
+		),
+	),
+	'meta_query'             => array(
+		array(
+			'key'     => 'page_rating',
+			'value'   => array( $minimal_rating, $maximal_rating ),
+			'compare' => 'BETWEEN',
+			'type'    => 'NUMERIC',
+		),
+	),
+);
 
 
 $loop = new WP_Query( $args ); 
-    
+if ( $loop->have_posts() ) : 
 while ( $loop->have_posts() ) : $loop->the_post(); 
 ?>
         <h3><?php the_title(); ?></h3>
@@ -208,6 +211,11 @@ while ( $loop->have_posts() ) : $loop->the_post();
         <p><?php the_excerpt(); ?> </p>
         <?php
 endwhile;
+
+else :
+    echo esc_html("No results found, please try again");
+
+endif;
 
 wp_reset_postdata(); 
 ?>

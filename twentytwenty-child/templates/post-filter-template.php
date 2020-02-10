@@ -170,7 +170,7 @@ $args =  [   'date_query' => [
 
 
 $loop = new WP_Query( $args ); 
-    
+if ( $loop->have_posts() ) :   
 while ( $loop->have_posts() ) : $loop->the_post(); 
 ?>
         <h3><?php the_title(); ?></h3>
@@ -178,6 +178,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
         <p><?php the_excerpt(); ?> </p>
         <?php
 endwhile;
+
+else :
+    echo esc_html("No results found, please try again");
+
+endif;
+
 
 wp_reset_postdata(); 
 ?>
