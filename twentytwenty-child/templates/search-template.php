@@ -14,9 +14,6 @@ get_header();
 <main id="site-content" role="main">
 
 
-    <main id="site-content" role="main">
-
-
         <form role="search" method="get" id="searchform" action="<?php echo home_url( '/search-query' ); ?>">
             <div><label class="screen-reader-text" for="s">Search for:</label>
                 <input type="text" value="<?php echo esc_html($_GET['s']); ?>" placeholder="search term" name="s" id="s" />
@@ -55,8 +52,8 @@ wp_reset_postdata();
 ?>
 
 
-    </main><!-- #site-content -->
+</main><!-- #site-content -->
 
-    <?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

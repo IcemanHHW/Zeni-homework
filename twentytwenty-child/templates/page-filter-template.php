@@ -151,6 +151,15 @@ get_header();
                 <p>maximal rating</p>
                 <input type="number" name="maximal_rating" value="<?php echo esc_html($_GET['maximal_rating']); ?>">
             </div>
+            <br><br>
+            <div>
+                <p>Sorting order:</p>
+                <select name="page_rating_order">
+                    <option value="DESC" <?php if ($_GET['page_rating_order'] == 'DESC') echo 'selected="selected"'; ?>>Descending</option>
+                    <option value="ASC" <?php if ($_GET['page_rating_order'] == 'ASC') echo 'selected="selected"'; ?>>Ascending</option>
+                </select>
+            </div>
+            <br><br>
             <input type="submit" id="filtersubmit" value="filter" />
         </form>
         <br><br>
@@ -171,6 +180,9 @@ $year_to = $_GET['year_to'];
 /* rating data */
 $minimal_rating = intval( $_GET['minimal_rating'] );
 $maximal_rating = intval( $_GET['maximal_rating'] );
+
+/* order by data */
+$page_rating_order = $_GET['page_rating_order'];
 
 $args = array(
 	'post_type'              => 'page',
@@ -197,7 +209,9 @@ $args = array(
 			'compare' => 'BETWEEN',
 			'type'    => 'NUMERIC',
 		),
-	),
+    ),
+    'orderby' => 'page_rating',
+    'order' => $page_rating_order,
 );
 
 
