@@ -34,110 +34,110 @@ get_header();
         <div>
             <p>Select from date:</p>
             <select name="day_from">
-                <option value="1" <?php if ('1' === $_GET['day_from']) echo 'selected="selected"'; ?>>1</option>
-                <option value="2" <?php if ('2' === $_GET['day_from']) echo 'selected="selected"'; ?>>2</option>
-                <option value="3" <?php if ('3' === $_GET['day_from']) echo 'selected="selected"'; ?>>3</option>
-                <option value="4" <?php if ('4' === $_GET['day_from']) echo 'selected="selected"'; ?>>4</option>
-                <option value="5" <?php if ('5' === $_GET['day_from']) echo 'selected="selected"'; ?>>5</option>
-                <option value="6" <?php if ('6' === $_GET['day_from']) echo 'selected="selected"'; ?>>6</option>
-                <option value="7" <?php if ('7' === $_GET['day_from']) echo 'selected="selected"'; ?>>7</option>
-                <option value="8" <?php if ('8' === $_GET['day_from']) echo 'selected="selected"'; ?>>8</option>
-                <option value="9" <?php if ('9' === $_GET['day_from']) echo 'selected="selected"'; ?>>9</option>
-                <option value="10" <?php if ('10' === $_GET['day_from']) echo 'selected="selected"'; ?>>10</option>
-                <option value="11" <?php if ('11' === $_GET['day_from']) echo 'selected="selected"'; ?>>11</option>
-                <option value="12" <?php if ('12' === $_GET['day_from']) echo 'selected="selected"'; ?>>12</option>
-                <option value="13" <?php if ('13' === $_GET['day_from']) echo 'selected="selected"'; ?>>13</option>
-                <option value="14" <?php if ('14' === $_GET['day_from']) echo 'selected="selected"'; ?>>14</option>
-                <option value="15" <?php if ('15' === $_GET['day_from']) echo 'selected="selected"'; ?>>15</option>
-                <option value="16" <?php if ('16' === $_GET['day_from']) echo 'selected="selected"'; ?>>16</option>
-                <option value="17" <?php if ('17' === $_GET['day_from']) echo 'selected="selected"'; ?>>17</option>
-                <option value="18" <?php if ('18' === $_GET['day_from']) echo 'selected="selected"'; ?>>18</option>
-                <option value="19" <?php if ('19' === $_GET['day_from']) echo 'selected="selected"'; ?>>19</option>
-                <option value="20" <?php if ('20' === $_GET['day_from']) echo 'selected="selected"'; ?>>20</option>
-                <option value="21" <?php if ('21' === $_GET['day_from']) echo 'selected="selected"'; ?>>21</option>
-                <option value="22" <?php if ('22' === $_GET['day_from']) echo 'selected="selected"'; ?>>22</option>
-                <option value="23" <?php if ('23' === $_GET['day_from']) echo 'selected="selected"'; ?>>23</option>
-                <option value="24" <?php if ('24' === $_GET['day_from']) echo 'selected="selected"'; ?>>24</option>
-                <option value="25" <?php if ('25' === $_GET['day_from']) echo 'selected="selected"'; ?>>25</option>
-                <option value="26" <?php if ('26' === $_GET['day_from']) echo 'selected="selected"'; ?>>26</option>
-                <option value="27" <?php if ('27' === $_GET['day_from']) echo 'selected="selected"'; ?>>27</option>
-                <option value="28" <?php if ('28' === $_GET['day_from']) echo 'selected="selected"'; ?>>28</option>
-                <option value="29" <?php if ('29' === $_GET['day_from']) echo 'selected="selected"'; ?>>29</option>
-                <option value="30" <?php if ('30' === $_GET['day_from']) echo 'selected="selected"'; ?>>30</option>
-                <option value="31" <?php if ('31' === $_GET['day_from']) echo 'selected="selected"'; ?>>31</option>
+                <option value="1" <?php if (1 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>1</option>
+                <option value="2" <?php if (2 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>2</option>
+                <option value="3" <?php if (3 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>3</option>
+                <option value="4" <?php if (4 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>4</option>
+                <option value="5" <?php if (5 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>5</option>
+                <option value="6" <?php if (6 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>6</option>
+                <option value="7" <?php if (7 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>7</option>
+                <option value="8" <?php if (8 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>8</option>
+                <option value="9" <?php if (9 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>9</option>
+                <option value="10" <?php if (10 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>10</option>
+                <option value="11" <?php if (11 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>11</option>
+                <option value="12" <?php if (12 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>12</option>
+                <option value="13" <?php if (13 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>13</option>
+                <option value="14" <?php if (14 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>14</option>
+                <option value="15" <?php if (15 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>15</option>
+                <option value="16" <?php if (16 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>16</option>
+                <option value="17" <?php if (17 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>17</option>
+                <option value="18" <?php if (18 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>18</option>
+                <option value="19" <?php if (19 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>19</option>
+                <option value="20" <?php if (20 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>20</option>
+                <option value="21" <?php if (21 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>21</option>
+                <option value="22" <?php if (22 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>22</option>
+                <option value="23" <?php if (23 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>23</option>
+                <option value="24" <?php if (24 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>24</option>
+                <option value="25" <?php if (25 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>25</option>
+                <option value="26" <?php if (26 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>26</option>
+                <option value="27" <?php if (27 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>27</option>
+                <option value="28" <?php if (28 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>28</option>
+                <option value="29" <?php if (29 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>29</option>
+                <option value="30" <?php if (30 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>30</option>
+                <option value="31" <?php if (31 === intval( $_GET['day_from'] )) echo 'selected="selected"'; ?>>31</option>
             </select>
             <select name="month_from">
-                <option value="1" <?php if ('1' === $_GET['month_from']) echo 'selected="selected"'; ?>>Jan</option>
-                <option value="2" <?php if ('2' === $_GET['month_from']) echo 'selected="selected"'; ?>>Feb</option>
-                <option value="3" <?php if ('3' === $_GET['month_from']) echo 'selected="selected"'; ?>>March
+                <option value="1" <?php if (1 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Jan</option>
+                <option value="2" <?php if (2 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Feb</option>
+                <option value="3" <?php if (3 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>March
                 </option>
-                <option value="4" <?php if ('4' === $_GET['month_from']) echo 'selected="selected"'; ?>>April
+                <option value="4" <?php if (4 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>April
                 </option>
-                <option value="5" <?php if ('5' === $_GET['month_from']) echo 'selected="selected"'; ?>>May</option>
-                <option value="6" <?php if ('6' === $_GET['month_from']) echo 'selected="selected"'; ?>>June</option>
-                <option value="7" <?php if ('7' === $_GET['month_from']) echo 'selected="selected"'; ?>>July</option>
-                <option value="8" <?php if ('8' === $_GET['month_from']) echo 'selected="selected"'; ?>>Aug</option>
-                <option value="9" <?php if ('9' === $_GET['month_from']) echo 'selected="selected"'; ?>>Sept</option>
-                <option value="10" <?php if ('10' === $_GET['month_from']) echo 'selected="selected"'; ?>>Oct</option>
-                <option value="11" <?php if ('11' === $_GET['month_from']) echo 'selected="selected"'; ?>>Nov</option>
-                <option value="12" <?php if ('12' === $_GET['month_from']) echo 'selected="selected"'; ?>>Dec</option>
+                <option value="5" <?php if (5 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>May</option>
+                <option value="6" <?php if (6 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>June</option>
+                <option value="7" <?php if (7 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>July</option>
+                <option value="8" <?php if (8 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Aug</option>
+                <option value="9" <?php if (9 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Sept</option>
+                <option value="10" <?php if (10 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Oct</option>
+                <option value="11" <?php if (11 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Nov</option>
+                <option value="12" <?php if (12 === intval( $_GET['month_from'] )) echo 'selected="selected"'; ?>>Dec</option>
             </select>
             <select name="year_from">
-                <option value="2017" <?php if ('2017' === $_GET['year_from']) echo 'selected="selected"'; ?>>2017</option>
-                <option value="2018" <?php if ('2018' === $_GET['year_from']) echo 'selected="selected"'; ?>>2018</option>
-                <option value="2019" <?php if ('2019' === $_GET['year_from']) echo 'selected="selected"'; ?>>2019</option>
-                <option value="2020" <?php if ('2020' === $_GET['year_from']) echo 'selected="selected"'; ?>>2020</option>
+                <option value="2017" <?php if ('2017' === intval( $_GET['year_from'] )) echo 'selected="selected"'; ?>>2017</option>
+                <option value="2018" <?php if ('2018' === intval( $_GET['year_from'] )) echo 'selected="selected"'; ?>>2018</option>
+                <option value="2019" <?php if ('2019' === intval( $_GET['year_from'] )) echo 'selected="selected"'; ?>>2019</option>
+                <option value="2020" <?php if ('2020' === intval( $_GET['year_from'] )) echo 'selected="selected"'; ?>>2020</option>
             </select>
         </div>
         <br><br>
         <div>
             <p>Select to date:</p>
             <select name="day_to">
-                <option value="1" <?php if ('1' === $_GET['day_to']) echo 'selected="selected"'; ?>>1</option>
-                <option value="2" <?php if ('2' === $_GET['day_to']) echo 'selected="selected"'; ?>>2</option>
-                <option value="3" <?php if ('3' === $_GET['day_to']) echo 'selected="selected"'; ?>>3</option>
-                <option value="4" <?php if ('4' === $_GET['day_to']) echo 'selected="selected"'; ?>>4</option>
-                <option value="5" <?php if ('5' === $_GET['day_to']) echo 'selected="selected"'; ?>>5</option>
-                <option value="6" <?php if ('6' === $_GET['day_to']) echo 'selected="selected"'; ?>>6</option>
-                <option value="7" <?php if ('7' === $_GET['day_to']) echo 'selected="selected"'; ?>>7</option>
-                <option value="8" <?php if ('8' === $_GET['day_to']) echo 'selected="selected"'; ?>>8</option>
-                <option value="9" <?php if ('9' === $_GET['day_to']) echo 'selected="selected"'; ?>>9</option>
-                <option value="10" <?php if ('10' === $_GET['day_to']) echo 'selected="selected"'; ?>>10</option>
-                <option value="11" <?php if ('11' === $_GET['day_to']) echo 'selected="selected"'; ?>>11</option>
-                <option value="12" <?php if ('12' === $_GET['day_to']) echo 'selected="selected"'; ?>>12</option>
-                <option value="13" <?php if ('13' === $_GET['day_to']) echo 'selected="selected"'; ?>>13</option>
-                <option value="14" <?php if ('14' === $_GET['day_to']) echo 'selected="selected"'; ?>>14</option>
-                <option value="15" <?php if ('15' === $_GET['day_to']) echo 'selected="selected"'; ?>>15</option>
-                <option value="16" <?php if ('16' === $_GET['day_to']) echo 'selected="selected"'; ?>>16</option>
-                <option value="17" <?php if ('17' === $_GET['day_to']) echo 'selected="selected"'; ?>>17</option>
-                <option value="18" <?php if ('18' === $_GET['day_to']) echo 'selected="selected"'; ?>>18</option>
-                <option value="19" <?php if ('19' === $_GET['day_to']) echo 'selected="selected"'; ?>>19</option>
-                <option value="20" <?php if ('20' === $_GET['day_to']) echo 'selected="selected"'; ?>>20</option>
-                <option value="21" <?php if ('21' === $_GET['day_to']) echo 'selected="selected"'; ?>>21</option>
-                <option value="22" <?php if ('22' === $_GET['day_to']) echo 'selected="selected"'; ?>>22</option>
-                <option value="23" <?php if ('23' === $_GET['day_to']) echo 'selected="selected"'; ?>>23</option>
-                <option value="24" <?php if ('24' === $_GET['day_to']) echo 'selected="selected"'; ?>>24</option>
-                <option value="25" <?php if ('25' === $_GET['day_to']) echo 'selected="selected"'; ?>>25</option>
-                <option value="26" <?php if ('26' === $_GET['day_to']) echo 'selected="selected"'; ?>>26</option>
-                <option value="27" <?php if ('27' === $_GET['day_to']) echo 'selected="selected"'; ?>>27</option>
-                <option value="28" <?php if ('28' === $_GET['day_to']) echo 'selected="selected"'; ?>>28</option>
-                <option value="29" <?php if ('29' === $_GET['day_to']) echo 'selected="selected"'; ?>>29</option>
-                <option value="30" <?php if ('30' === $_GET['day_to']) echo 'selected="selected"'; ?>>30</option>
-                <option value="31" <?php if ('31' === $_GET['day_to']) echo 'selected="selected"'; ?>>31</option>
+                <option value="1" <?php if (1 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>1</option>
+                <option value="2" <?php if (2 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>2</option>
+                <option value="3" <?php if (3 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>3</option>
+                <option value="4" <?php if (4 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>4</option>
+                <option value="5" <?php if (5 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>5</option>
+                <option value="6" <?php if (6 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>6</option>
+                <option value="7" <?php if (7 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>7</option>
+                <option value="8" <?php if (8 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>8</option>
+                <option value="9" <?php if (9 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>9</option>
+                <option value="10" <?php if (10 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>10</option>
+                <option value="11" <?php if (11 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>11</option>
+                <option value="12" <?php if (12 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>12</option>
+                <option value="13" <?php if (13 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>13</option>
+                <option value="14" <?php if (14 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>14</option>
+                <option value="15" <?php if (15 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>15</option>
+                <option value="16" <?php if (16 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>16</option>
+                <option value="17" <?php if (17 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>17</option>
+                <option value="18" <?php if (18 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>18</option>
+                <option value="19" <?php if (19 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>19</option>
+                <option value="20" <?php if (20 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>20</option>
+                <option value="21" <?php if (21 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>21</option>
+                <option value="22" <?php if (22 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>22</option>
+                <option value="23" <?php if (23 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>23</option>
+                <option value="24" <?php if (24 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>24</option>
+                <option value="25" <?php if (25 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>25</option>
+                <option value="26" <?php if (26 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>26</option>
+                <option value="27" <?php if (27 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>27</option>
+                <option value="28" <?php if (28 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>28</option>
+                <option value="29" <?php if (29 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>29</option>
+                <option value="30" <?php if (30 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>30</option>
+                <option value="31" <?php if (31 === intval( $_GET['day_to'] )) echo 'selected="selected"'; ?>>31</option>
             </select>
             <select name="month_to">
-                <option value="1" <?php if ('1' === $_GET['month_to']) echo 'selected="selected"'; ?>>Jan</option>
-                <option value="2" <?php if ('2' === $_GET['month_to']) echo 'selected="selected"'; ?>>Feb</option>
-                <option value="3" <?php if ('3' === $_GET['month_to']) echo 'selected="selected"'; ?>>March</option>
-                <option value="4" <?php if ('4' === $_GET['month_to']) echo 'selected="selected"'; ?>>April</option>
-                <option value="5" <?php if ('5' === $_GET['month_to']) echo 'selected="selected"'; ?>>May</option>
-                <option value="6" <?php if ('6' === $_GET['month_to']) echo 'selected="selected"'; ?>>June</option>
-                <option value="7" <?php if ('7' === $_GET['month_to']) echo 'selected="selected"'; ?>>July</option>
-                <option value="8" <?php if ('8' === $_GET['month_to']) echo 'selected="selected"'; ?>>Aug</option>
-                <option value="9" <?php if ('9' === $_GET['month_to']) echo 'selected="selected"'; ?>>Sept</option>
-                <option value="10" <?php if ('10' === $_GET['month_to']) echo 'selected="selected"'; ?>>Oct</option>
-                <option value="11" <?php if ('11' === $_GET['month_to']) echo 'selected="selected"'; ?>>Nov</option>
-                <option value="12" <?php if ('12' === $_GET['month_to']) echo 'selected="selected"'; ?>>Dec</option>
+                <option value="1" <?php if (1 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Jan</option>
+                <option value="2" <?php if (2 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Feb</option>
+                <option value="3" <?php if (3 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>March</option>
+                <option value="4" <?php if (4 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>April</option>
+                <option value="5" <?php if (5 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>May</option>
+                <option value="6" <?php if (6 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>June</option>
+                <option value="7" <?php if (7 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>July</option>
+                <option value="8" <?php if (8 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Aug</option>
+                <option value="9" <?php if (9 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Sept</option>
+                <option value="10" <?php if (10 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Oct</option>
+                <option value="11" <?php if (11 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Nov</option>
+                <option value="12" <?php if (12 === intval( $_GET['month_to'] )) echo 'selected="selected"'; ?>>Dec</option>
             </select>
             <select name="year_to">
                 <option value="2017" <?php if ( 2017 === intval( $_GET['year_to'] )) echo 'selected="selected"'; ?>>2017</option>
